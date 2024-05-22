@@ -41,8 +41,8 @@ void print_matrix(int N, int **A) {
 }
 
 int main() {
-    int N = 5;  // Розмірність сітки
-    double R = 2; // Радіус зв'язності
+    int N = 10000;  // Розмірність сітки
+    double R = 100; // Радіус зв'язності
 
     // Виділення пам'яті для матриці
     int **A = (int **)malloc(N * sizeof(int *));
@@ -58,7 +58,7 @@ int main() {
     printf("Time taken: %f seconds\n", end_time - start_time);
 
     // Виведення матриці (опціонально)
-    print_matrix(N, A);
+    // print_matrix(N, A);
 
     // Звільнення пам'яті
     for (int i = 0; i < N; i++) {
