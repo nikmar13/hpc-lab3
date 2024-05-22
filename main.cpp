@@ -58,7 +58,7 @@ int main() {
     printf("Time taken: %f seconds\n", end_time - start_time);
 
     // Виведення матриці (опціонально)
-    // print_matrix(N, A);
+    print_matrix(N, A);
 
     // Звільнення пам'яті
     for (int i = 0; i < N; i++) {
