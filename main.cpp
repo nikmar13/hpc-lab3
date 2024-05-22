@@ -41,8 +41,8 @@ void print_matrix(int N, int **A) {
 }
 
 int main() {
-    int N = 1000;  // Розмірність сітки
-    double R = 10; // Радіус зв'язності
+    int N = 5;  // Розмірність сітки
+    double R = 2; // Радіус зв'язності
 
     // Виділення пам'яті для матриці
     int **A = (int **)malloc(N * sizeof(int *));
