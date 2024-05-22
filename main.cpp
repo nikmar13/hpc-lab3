@@ -38,8 +38,8 @@ void print_matrix(int N, int **A) {
 }
 
 int main() {
-    int N = 10000;
-    double R = 100;
+    int N = 10;
+    double R = 3;
 
     int **A = (int **)malloc(N * sizeof(int *));
     for (int i = 0; i < N; i++) {
@@ -52,7 +52,7 @@ int main() {
 
     printf("Time taken: %f seconds\n", end_time - start_time);
 
-    // print_matrix(N, A);
+    print_matrix(N, A);
 
     for (int i = 0; i < N; i++) {
         free(A[i]);
