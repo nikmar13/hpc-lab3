@@ -1,7 +1,14 @@
 #!/bin/bash
+#PBS -N openmp_task
+#PBS -l walltime=01:00:00
+#PBS -l mem=1gb
 
 OUTPUT_FILE="results.txt"
 echo "Threads, Time" > $OUTPUT_FILE
+
+ml icc
+ml openmpi
+icc -o main -qopenmp main.cpp
 
 for THREADS in 1 2 3 4 5 6 7 8
 do
